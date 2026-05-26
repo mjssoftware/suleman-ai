@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "version": "Uthmani Script",
+    "total_surahs": 114,
+    "total_verses": 6236,
+    "revelation_place": ["Meccan", "Medinan"],
+    "source": "Tanzil.net"
+  },
+  "surahs": [
+    {
+      "id": 1,
+      "name_arabic": "الفاتحة",
+      "name_transliteration": "Al-Fatihah",
+      "name_english": "The Opener",
+      "verses_count": 7,
+      "revelation_place": "Meccan",
+      "verses": [
+        {
+          "verse_id": 1,
+          "verse_arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+          "verse_simple": "Bismillahir Rahmanir Rahim",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 2,
+          "verse_arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+          "verse_simple": "Alhamdu lillahi rabbil 'alamin",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 3,
+          "verse_arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+          "verse_simple": "Ar-Rahmanir Rahim",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 4,
+          "verse_arabic": "مَالِكِ يَوْمِ الدِّينِ",
+          "verse_simple": "Maliki yawmid-din",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 5,
+          "verse_arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+          "verse_simple": "Iyyaka na'budu wa iyyaka nasta'in",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 6,
+          "verse_arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+          "verse_simple": "Ihdinas-siratal mustaqim",
+          "juz": 1,
+          "page": 1
+        },
+        {
+          "verse_id": 7,
+          "verse_arabic": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+          "verse_simple": "Siratal lazina an'amta 'alaihim ghairil maghdubi 'alaihim wa lad-dallin",
+          "juz": 1,
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name_arabic": "البقرة",
+      "name_transliteration": "Al-Baqarah",
+      "name_english": "The Cow",
+      "verses_count": 286,
+      "revelation_place": "Medinan",
+      "verses": [
+        {
+          "verse_id": 1,
+          "verse_arabic": "الٓمٓ",
+          "verse_simple": "Alif Lam Meem",
+          "juz": 1,
+          "page": 2
+        },
+        {
+          "verse_id": 2,
+          "verse_arabic": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ",
+          "verse_simple": "Zalikal-kitabu la raiba fih, hudal lil-muttaqin",
+          "juz": 1,
+          "page": 2
+        },
+        {
+          "verse_id": 255,
+          "verse_arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          "verse_simple": "Allahu la ilaha illa huwal hayyul qayyum...",
+          "juz": 3,
+          "page": 43,
+          "special_note": "Ayat-ul-Kursi - The Throne Verse"
+        }
+      ]
+    }
+  ]
+}

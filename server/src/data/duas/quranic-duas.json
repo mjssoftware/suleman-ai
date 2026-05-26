@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "title": "Duas from the Holy Quran",
+    "source": "Quranic Verses",
+    "total": 30
+  },
+  "duas": [
+    {
+      "id": 1,
+      "reference": "Surah Al-Fatihah:5-6",
+      "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+      "transliteration": "Ihdinas siratal mustaqeem",
+      "translation": "Guide us to the straight path.",
+      "context": "Seeking guidance from Allah"
+    },
+    {
+      "id": 2,
+      "reference": "Surah Al-Baqarah:201",
+      "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+      "transliteration": "Rabbana atina fid dunya hasanatan wa fil akhirati hasanatan wa qina adhaban nar",
+      "translation": "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire."
+    },
+    {
+      "id": 3,
+      "reference": "Surah Al-Imran:8",
+      "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً ۚ إِنَّكَ أَنْتَ الْوَهَّابُ",
+      "transliteration": "Rabbana la tuzigh quloobana ba'da idh hadaitana wa hab lana min ladunka rahmah, innaka antal wahhab",
+      "translation": "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower."
+    },
+    {
+      "id": 4,
+      "reference": "Surah Al-Imran:193",
+      "arabic": "رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ",
+      "transliteration": "Rabbana faghfir lana dhunoobana wa kaffir 'anna sayyi'aatina wa tawaffana ma'al abrar",
+      "translation": "Our Lord, forgive us our sins and remove from us our misdeeds and cause us to die with the righteous."
+    },
+    {
+      "id": 5,
+      "reference": "Surah Ibrahim:40",
+      "arabic": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
+      "transliteration": "Rabbij 'alni muqeemas salati wa min dhurriyyati, rabbana wa taqabbal du'a",
+      "translation": "My Lord, make me an establisher of prayer, and [many] from my descendants. Our Lord, and accept my supplication."
+    }
+  ]
+}

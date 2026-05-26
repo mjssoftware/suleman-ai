@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "collection": "Sahih Muslim",
+    "compiler": "Imam Muslim ibn al-Hajjaj (d. 261 AH)",
+    "total_hadith": "~9200",
+    "authenticity": "Sahih (Authentic)"
+  },
+  "hadiths": [
+    {
+      "id": 1,
+      "reference": "Muslim 1:1",
+      "narrator": "Abu Hurairah",
+      "text_english": "The Messenger of Allah (peace be upon him) said: 'None of you truly believes until he loves for his brother what he loves for himself.'",
+      "text_simple": "You don't have true faith until you want for others what you want for yourself.",
+      "grade": "Sahih",
+      "keywords": ["brotherhood", "love", "faith", "iman"]
+    },
+    {
+      "id": 2,
+      "reference": "Muslim 4:1",
+      "narrator": "Anas ibn Malik",
+      "text_english": "The Messenger of Allah (peace be upon him) said: 'None of you truly believes until I am more beloved to him than his father, his son, and all of mankind.'",
+      "text_simple": "True faith requires loving Prophet Muhammad more than anyone else.",
+      "grade": "Sahih",
+      "keywords": ["love", "prophet", "iman"]
+    },
+    {
+      "id": 3,
+      "reference": "Muslim 8:1",
+      "narrator": "Abu Dharr",
+      "text_english": "The Messenger of Allah (peace be upon him) said: 'Fear Allah wherever you are, follow a bad deed with a good deed to erase it, and treat people with good character.'",
+      "text_simple": "Fear Allah always, do good after bad to remove it, and have good manners with people.",
+      "grade": "Sahih",
+      "keywords": ["taqwa", "good deeds", "character", "manners"]
+    }
+  ]
+}

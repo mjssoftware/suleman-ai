@@ -1,0 +1,180 @@
+/* ========================================
+   ISLAMIC DECORATIVE PATTERNS
+   ======================================== */
+
+/* Geometric Pattern Background */
+.islamic-pattern {
+    position: relative;
+    overflow: hidden;
+}
+
+.islamic-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%232e8b57' fill-opacity='0.03' d='M50,0 L100,50 L50,100 L0,50 Z'/%3E%3Cpath fill='%232e8b57' fill-opacity='0.02' d='M50,20 L80,50 L50,80 L20,50 Z'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    pointer-events: none;
+    z-index: var(--z-negative);
+}
+
+/* Islamic Border Decoration */
+.islamic-border {
+    position: relative;
+    padding: 2rem;
+}
+
+.islamic-border::before,
+.islamic-border::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232e8b57'%3E%3Cpath d='M12,2L15,8L22,9L17,14L18,21L12,18L6,21L7,14L2,9L9,8L12,2Z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.islamic-border::before {
+    top: 10px;
+    left: 10px;
+}
+
+.islamic-border::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Arabic Calligraphy Style */
+.arabic-text {
+    font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    direction: rtl;
+}
+
+/* Mosque Silhouette */
+.mosque-silhouette {
+    position: relative;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent 60%, var(--bg-tertiary) 100%);
+}
+
+.mosque-silhouette::before {
+    content: '🕌';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    opacity: 0.1;
+}
+
+/* Crescent and Star */
+.crescent-star {
+    position: relative;
+    display: inline-block;
+}
+
+.crescent-star::before {
+    content: '☪';
+    font-size: 1.5rem;
+    opacity: 0.3;
+}
+
+/* Prayer Beads Animation */
+.tasbih-animation {
+    display: inline-flex;
+    gap: 0.25rem;
+    animation: tasbihMove 2s ease-in-out infinite;
+}
+
+.tasbih-bead {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    animation: beadGlow 1.5s ease-in-out infinite;
+}
+
+.tasbih-bead:nth-child(2) { animation-delay: 0.2s; }
+.tasbih-bead:nth-child(3) { animation-delay: 0.4s; }
+.tasbih-bead:nth-child(4) { animation-delay: 0.6s; }
+.tasbih-bead:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes tasbihMove {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+}
+
+@keyframes beadGlow {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Islamic Frame */
+.islamic-frame {
+    position: relative;
+    border: 2px solid var(--islamic-gold);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.islamic-frame::before,
+.islamic-frame::after {
+    content: '✿';
+    position: absolute;
+    font-size: 1rem;
+    color: var(--islamic-gold);
+}
+
+.islamic-frame::before {
+    top: -10px;
+    left: 20px;
+    background: var(--bg-primary);
+    padding: 0 5px;
+}
+
+.islamic-frame::after {
+    bottom: -10px;
+    right: 20px;
+    background: var(--bg-primary);
+    padding: 0 5px;
+}
+
+/* 8-Pointed Star */
+.star-8 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.star-8::before {
+    content: '✦';
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--islamic-gold);
+}
+
+/* Islamic Arch */
+.islamic-arch {
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+
+.islamic-arch::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: var(--bg-secondary);
+    border-radius: 50% 50% 0 0;
+}

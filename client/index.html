@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Suleman AI - Intelligent Islamic Chatbot Assistant. Get answers about Islam, Quran, Hadith, and daily duas.">
+    <meta name="theme-color" content="#2e8b57">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <title>Suleman AI | Islamic Chatbot Assistant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Highlight.js for code blocks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/islamic-patterns.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading Suleman AI...</p>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>Suleman AI</h2>
+                        <span>Islamic Assistant</span>
+                    </div>
+                </div>
+                <button class="new-chat-btn" id="newChatBtn">
+                    <i class="fas fa-plus"></i>
+                    <span>New Chat</span>
+                </button>
+            </div>
+
+            <div class="chat-history-container">
+                <div class="history-header">
+                    <i class="fas fa-history"></i>
+                    <span>Recent Chats</span>
+                </div>
+                <div class="chat-history" id="chatHistory">
+                    <!-- Chat history items will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-info" id="userInfo">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <span class="user-name">Guest User</span>
+                        <span class="user-status">Online</span>
+                    </div>
+                </div>
+                <div class="sidebar-actions">
+                    <button class="sidebar-btn" id="settingsBtn" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <button class="sidebar-btn" id="themeToggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="sidebar-btn" id="clearHistoryBtn" title="Clear History">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <div class="chat-header">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="header-title">
+                    <h1>Suleman AI</h1>
+                    <p class="header-subtitle">
+                        <i class="fas fa-circle" style="font-size: 8px; color: #2e8b57;"></i>
+                        Ready to assist
+                    </p>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="model-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Assistant</span>
+                    </div>
+                    <button class="header-btn" id="searchBtn" title="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages Area -->
+            <div class="messages-area" id="messagesArea">
+                <div class="welcome-screen">
+                    <div class="welcome-content">
+                        <div class="welcome-animation">
+                            <div class="welcome-icon">
+                                <i class="fas fa-hand-peace"></i>
+                            </div>
+                        </div>
+                        <h2>Assalamu Alaikum! 👋</h2>
+                        <p>I'm Suleman AI, your intelligent Islamic assistant. I can help you with:</p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-book-quran"></i>
+                                <span>Quranic Verses</span>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-hadith"></i>
+                                <span>Authentic Hadith</span>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-pray"></i>
+                                <span>Daily Duas</span>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-mosque"></i>
+                                <span>Islamic Rulings</span>
+                            </div>
+                        </div>
+
+                        <div class="suggestions-container">
+                            <p class="suggestions-title">
+                                <i class="fas fa-lightbulb"></i>
+                                Try asking:
+                            </p>
+                            <div class="suggestion-chips">
+                                <button class="chip" data-question="What are the 5 pillars of Islam?">
+                                    <i class="fas fa-pray"></i> 5 Pillars of Islam
+                                </button>
+                                <button class="chip" data-question="Tell me about Surah Al-Fatihah">
+                                    <i class="fas fa-book-quran"></i> Surah Al-Fatihah
+                                </button>
+                                <button class="chip" data-question="What does the Quran say about patience?">
+                                    <i class="fas fa-heart"></i> Patience in Quran
+                                </button>
+                                <button class="chip" data-question="Give me a morning dua">
+                                    <i class="fas fa-sun"></i> Morning Dua
+                                </button>
+                                <button class="chip" data-question="Who was Prophet Muhammad (PBUH)?">
+                                    <i class="fas fa-star-and-crescent"></i> Prophet Muhammad
+                                </button>
+                                <button class="chip" data-question="How to perform wudu?">
+                                    <i class="fas fa-hand-sparkles"></i> How to do Wudu
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <div class="input-actions-left">
+                        <button class="input-action-btn" id="voiceInputBtn" title="Voice Input">
+                            <i class="fas fa-microphone"></i>
+                        </button>
+                    </div>
+                    
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask me about Islam, Quran, Hadith..."
+                        rows="1"
+                        maxlength="2000"
+                    ></textarea>
+                    
+                    <div class="input-actions-right">
+                        <button class="input-action-btn" id="emojiBtn" title="Emoji">
+                            <i class="far fa-smile-wink"></i>
+                        </button>
+                        <button class="send-btn" id="sendBtn" title="Send Message">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="input-footer">
+                    <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="typing-text">Suleman is thinking...</span>
+                    </div>
+                    <div class="input-info">
+                        <i class="fas fa-lock"></i>
+                        <span>Your conversations are private</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Search Modal -->
+        <div class="modal" id="searchModal">
+            <div class="modal-content modal-large">
+                <div class="modal-header">
+                    <h3>
+                        <i class="fas fa-search"></i>
+                        Search Islamic Content
+                    </h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchInput" placeholder="Search Quran, Hadith, or Duas...">
+                        </div>
+                        <div class="search-filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="quran">Quran</button>
+                            <button class="filter-btn" data-filter="hadith">Hadith</button>
+                            <button class="filter-btn" data-filter="dua">Duas</button>
+                        </div>
+                    </div>
+                    <div class="search-results" id="searchResults">
+                        <!-- Search results will appear here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div class="modal" id="settingsModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="settings-section">
+                        <h4>Appearance</h4>
+                        <div class="setting-item">
+                            <label>Theme</label>
+                            <div class="theme-buttons">
+                                <button class="theme-option" data-theme="light">
+                                    <i class="fas fa-sun"></i> Light
+                                </button>
+                                <button class="theme-option" data-theme="dark">
+                                    <i class="fas fa-moon"></i> Dark
+                                </button>
+                                <button class="theme-option" data-theme="auto">
+                                    <i class="fas fa-adjust"></i> Auto
+                                </button>
+                            </div>
+                        </div>
+                        <div class="setting-item">
+                            <label>Font Size</label>
+                            <div class="font-size-controls">
+                                <button class="font-size-btn" data-size="small">A-</button>
+                                <button class="font-size-btn active" data-size="medium">A</button>
+                                <button class="font-size-btn" data-size="large">A+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h4>Preferences</h4>
+                        <div class="setting-item">
+                            <label>Language</label>
+                            <select id="languageSelect">
+                                <option value="en">English</option>
+                                <option value="ar">العربية (Arabic)</option>
+                                <option value="ur">اردو (Urdu)</option>
+                                <option value="id">Bahasa Indonesia</option>
+                                <option value="tr">Türkçe</option>
+                                <option value="bn">বাংলা (Bengali)</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label>Madhhab (School of Thought)</label>
+                            <select id="madhhabSelect">
+                                <option value="general">General (No preference)</option>
+                                <option value="hanafi">Hanafi</option>
+                                <option value="maliki">Maliki</option>
+                                <option value="shafii">Shafi'i</option>
+                                <option value="hanbali">Hanbali</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="includeCitations" checked>
+                                <span>Include Citations (Quran/Hadith references)</span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="autoSaveChats" checked>
+                                <span>Auto-save chat history</span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="soundNotifications">
+                                <span>Sound notifications</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h4>Data Management</h4>
+                        <div class="setting-item">
+                            <button class="btn-secondary" id="exportChatsBtn">
+                                <i class="fas fa-download"></i> Export Chats
+                            </button>
+                            <button class="btn-danger" id="clearAllDataBtn">
+                                <i class="fas fa-trash"></i> Clear All Data
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="settings-section">
+                        <h4>About</h4>
+                        <div class="about-info">
+                            <p><strong>Suleman AI</strong> v1.0.0</p>
+                            <p>An intelligent Islamic assistant powered by AI</p>
+                            <p>Based on authentic Quran and Hadith sources</p>
+                            <hr>
+                            <p>
+                                <i class="fas fa-envelope"></i> support@suleman-ai.com<br>
+                                <i class="fas fa-globe"></i> www.suleman-ai.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Modal -->
+        <div class="modal" id="feedbackModal">
+            <div class="modal-content modal-small">
+                <div class="modal-header">
+                    <h3>Rate Your Experience</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="rating-stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <textarea id="feedbackComment" placeholder="Share your feedback (optional)..." rows="4"></textarea>
+                    <button class="btn-primary" id="submitFeedbackBtn">Submit Feedback</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notification Container -->
+        <div class="toast-container" id="toastContainer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

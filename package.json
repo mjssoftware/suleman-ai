@@ -1,0 +1,70 @@
+{
+  "name": "suleman-ai",
+  "version": "1.0.0",
+  "description": "Islamic Chatbot AI with Semantic Search & QA",
+  "main": "server/src/server.js",
+  "author": "Suleman AI",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "node server/src/server.js",
+    "dev": "nodemon server/src/server.js",
+    "build:vectors": "node vector-db/indexers/buildIndex.js",
+    "search:vectors": "node vector-db/indexers/searchIndex.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "lint": "eslint server/src/",
+    "format": "prettier --write \"server/src/**/*.js\"",
+    "seed:quran": "node scripts/seedQuran.js",
+    "seed:hadith": "node scripts/seedHadith.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0",
+    "@huggingface/inference": "^2.6.4",
+    "express-rate-limit": "^6.10.0",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "winston": "^3.10.0",
+    "joi": "^17.9.2",
+    "node-cache": "^5.1.2",
+    "redis": "^4.6.7",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "express-validator": "^7.0.1",
+    "morgan": "^1.10.0",
+    "chromadb": "^1.5.4",
+    "faiss-node": "^0.5.0",
+    "axios": "^1.5.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "@types/jest": "^29.5.5"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/client/"
+    ]
+  }
+}

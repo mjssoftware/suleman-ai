@@ -1,0 +1,42 @@
+{
+  "gradings": {
+    "sahih": {
+      "name": "Authentic",
+      "description": "Perfect chain of narration with upright and precise narrators",
+      "ruling": "Can be used as evidence",
+      "examples": ["Sahih Bukhari", "Sahih Muslim"]
+    },
+    "hasan": {
+      "name": "Good",
+      "description": "Chain of narration with some minor issues but still reliable",
+      "ruling": "Can be used as evidence",
+      "examples": ["Sunan Abu Dawud", "Sunan Tirmidhi (some)"]
+    },
+    "daif": {
+      "name": "Weak",
+      "description": "Issues in chain or narrators' reliability",
+      "ruling": "Cannot be used for rulings but can be used for virtues",
+      "examples": ["Some narrations in other collections"]
+    },
+    "mawdu": {
+      "name": "Fabricated",
+      "description": "Falsely attributed to Prophet Muhammad",
+      "ruling": "Cannot be used at all",
+      "examples": ["Rejected by all scholars"]
+    },
+    "mutawatir": {
+      "name": "Mass-transmitted",
+      "description": "Reported by so many chains that fabrication is impossible",
+      "ruling": "Highest level, certain knowledge",
+      "examples": ["'Whoever lies about me intentionally...'"]
+    }
+  },
+  "hadith_collections": {
+    "bukhari": {"grade": "Sahih", "ranking": 1},
+    "muslim": {"grade": "Sahih", "ranking": 2},
+    "abudawud": {"grade": "Hasan/Sahih", "ranking": 3},
+    "tirmidhi": {"grade": "Hasan/Sahih", "ranking": 4},
+    "nasai": {"grade": "Sahih/Hasan", "ranking": 5},
+    "ibnmajah": {"grade": "Hasan/Daif", "ranking": 6}
+  }
+}

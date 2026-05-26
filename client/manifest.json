@@ -1,0 +1,89 @@
+{
+    "name": "Suleman AI",
+    "short_name": "Suleman AI",
+    "description": "Intelligent Islamic Chatbot Assistant",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#2e8b57",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/assets/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/assets/screenshot-1.png",
+            "sizes": "1080x1920",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "New Chat",
+            "short_name": "New",
+            "description": "Start a new conversation",
+            "url": "/?new=true",
+            "icons": [
+                {
+                    "src": "/assets/shortcut-new.png",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "Search Quran",
+            "short_name": "Quran",
+            "description": "Search the Holy Quran",
+            "url": "/?search=quran",
+            "icons": [
+                {
+                    "src": "/assets/shortcut-quran.png",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ],
+    "categories": ["education", "lifestyle", "productivity"],
+    "lang": "en",
+    "dir": "ltr"
+}

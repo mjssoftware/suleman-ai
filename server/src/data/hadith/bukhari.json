@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "collection": "Sahih al-Bukhari",
+    "compiler": "Imam Muhammad ibn Ismail al-Bukhari (d. 256 AH)",
+    "total_hadith": "~7563",
+    "authenticity": "Sahih (Authentic)",
+    "source": "Sunnah.com"
+  },
+  "chapters": {
+    "faith": [
+      {
+        "id": 1,
+        "reference": "Bukhari 1:1",
+        "narrator": "Umar ibn al-Khattab",
+        "arabic": "عَنْ عُمَرَ بْنِ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى»",
+        "text_english": "Umar ibn al-Khattab reported: The Messenger of Allah (peace be upon him) said: 'Verily, deeds are only with intentions, and every person will have only what they intended.'",
+        "text_simple": "Actions are judged by intentions. Everyone gets what they intend.",
+        "grade": "Sahih",
+        "keywords": ["intention", "niyyah", "sincerity"],
+        "explanation": "This foundational hadith teaches that the value of our actions depends on our sincere intentions for Allah's sake."
+      },
+      {
+        "id": 2,
+        "reference": "Bukhari 1:2",
+        "narrator": "Aisha",
+        "arabic": "عَنْ عَائِشَةَ رَضِيَ اللَّهُ عَنْهَا قَالَتْ: قَالَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ: «مَنْ أَحْدَثَ فِي أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ»",
+        "text_english": "Aisha reported: The Messenger of Allah (peace be upon him) said: 'Whoever innovates into this matter of ours something that does not belong to it, it will be rejected.'",
+        "text_simple": "Whoever introduces something new into Islam that isn't from it, it will be rejected.",
+        "grade": "Sahih",
+        "keywords": ["innovation", "bidah", "sunnah"]
+      }
+    ],
+    "prayer": [
+      {
+        "id": 1,
+        "reference": "Bukhari 8:1",
+        "narrator": "Abu Hurairah",
+        "arabic": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللَّهُ عَنْهُ: أَنَّ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَالَ: «الصَّلَوَاتُ الْخَمْسُ وَالْجُمُعَةُ إِلَى الْجُمُعَةِ وَرَمَضَانُ إِلَى رَمَضَانَ مُكَفِّرَاتٌ مَا بَيْنَهُنَّ إِذَا اجْتَنَبَتِ الْكَبَائِرُ»",
+        "text_english": "Abu Hurairah reported: The Messenger of Allah (peace be upon him) said: 'The five daily prayers, Friday to Friday, and Ramadan to Ramadan expiate the sins between them, as long as major sins are avoided.'",
+        "text_simple": "Five daily prayers erase minor sins, as long as you avoid major sins.",
+        "grade": "Sahih",
+        "keywords": ["prayer", "salah", "forgiveness", "sins"]
+      }
+    ]
+  }
+}

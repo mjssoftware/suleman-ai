@@ -1,0 +1,119 @@
+suleman-ai/
+│
+├── client/                          # Frontend (HTML/CSS/JS)
+│   ├── index.html                   # Main chat interface
+│   ├── css/
+│   │   ├── main.css                 # Main styles
+│   │   ├── chat.css                 # Chat-specific styles
+│   │   ├── islamic-patterns.css     # Islamic geometric patterns/themes
+│   │   └── responsive.css           # Mobile responsiveness
+│   │
+│   ├── js/
+│   │   ├── app.js                   # Main app logic
+│   │   ├── chat.js                  # Chat functionality
+│   │   ├── api.js                   # API calls to backend
+│   │   ├── utils.js                 # Helper functions
+│   │   └── voice.js                 # Optional: voice input
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── logo.svg             # Islamic/Arabic calligraphy logo
+│   │   │   ├── mosque-icon.png
+│   │   │   └── quran-icon.png
+│   │   ├── fonts/
+│   │   │   ├── NotoNaskhArabic.woff2
+│   │   │   └── UthmanicHafs.woff2   # Quranic font
+│   │   └── sounds/
+│   │       └── notification.mp3
+│   │
+│   └── pages/                       # Optional: additional pages
+│       ├── about.html
+│       └── tafsir.html
+│
+├── server/                          # Backend (Node/Express)
+│   ├── src/
+│   │   ├── app.js                   # Express app initialization
+│   │   ├── server.js                # Server entry point
+│   │   │
+│   │   ├── config/
+│   │   │   ├── database.js          # DB connection (MongoDB/Postgres)
+│   │   │   ├── redis.js             # Redis for caching (optional)
+│   │   │   └── env.js               # Environment variables
+│   │   │
+│   │   ├── controllers/             # Business logic
+│   │   │   ├── chatController.js    # Chat handling
+│   │   │   ├── qaController.js      # QA logic
+│   │   │   ├── quranController.js   # Quran-specific endpoints
+│   │   │   ├── hadithController.js  # Hadith endpoints
+│   │   │   └── userController.js    # User sessions/history
+│   │   │
+│   │   ├── models/                  # Database models
+│   │   │   ├── ChatHistory.js       # User chat history
+│   │   │   ├── UserSession.js       # User sessions
+│   │   │   └── Feedback.js          # User feedback on answers
+│   │   │
+│   │   ├── routes/                  # API routes
+│   │   │   ├── chatRoutes.js        # /api/chat endpoints
+│   │   │   ├── quranRoutes.js       # /api/quran endpoints
+│   │   │   ├── hadithRoutes.js      # /api/hadith endpoints
+│   │   │   └── userRoutes.js        # /api/user endpoints
+│   │   │
+│   │   ├── services/                # Core AI & Islamic logic
+│   │   │   ├── aiService.js         # LLM integration (OpenAI/Llama)
+│   │   │   ├── embeddingService.js  # Semantic search embeddings
+│   │   │   ├── retrievalService.js  # RAG (vector DB retrieval)
+│   │   │   ├── quranService.js      # Quran data handling
+│   │   │   ├── hadithService.js     # Hadith grading & retrieval
+│   │   │   ├── tafsirService.js     # Tafsir references
+│   │   │   └── arabicService.js     # Arabic text processing
+│   │   │
+│   │   ├── middleware/              # Express middleware
+│   │   │   ├── auth.js              # JWT/auth (if needed)
+│   │   │   ├── rateLimiter.js       # Prevent abuse
+│   │   │   ├── errorHandler.js      # Global error handling
+│   │   │   ├── logger.js            # Request logging
+│   │   │   └── sanitize.js          # Input sanitization
+│   │   │
+│   │   ├── utils/                   # Helper utilities
+│   │   │   ├── constants.js         # Islamic constants (prayer times, etc.)
+│   │   │   ├── validators.js        # Input validation
+│   │   │   ├── formatters.js        # Format Arabic/English text
+│   │   │   └── citations.js         # Format Islamic citations
+│   │   │
+│   │   └── data/                    # Islamic datasets
+│   │       ├── quran/
+│   │       │   ├── quran-arabic.json
+│   │       │   ├── quran-english.json
+│   │       │   └── tafsir/
+│   │       ├── hadith/
+│   │       │   ├── bukhari.json
+│   │       │   ├── muslim.json
+│   │       │   └── gradings.json
+│   │       └── duas/
+│   │           └── daily-duas.json
+│   │
+│   └── tests/                       # Unit & integration tests
+│       ├── unit/
+│       ├── integration/
+│       └── fixtures/
+│
+├── vector-db/                       # Vector database for RAG
+│   ├── chroma/                      # Or use Pinecone/Weaviate
+│   ├── embeddings/
+│   │   ├── quran-embeddings.npy
+│   │   └── hadith-embeddings.npy
+│   └── indexers/
+│       └── buildIndex.js            # Script to build vector index
+│
+├── logs/                            # Application logs
+│   ├── error.log
+│   └── combined.log
+│
+├── .env                             # Environment variables
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+├── Dockerfile                       # For containerization
+├── docker-compose.yml               # Multi-container setup
+└── nginx.conf                       # For production (reverse proxy)
