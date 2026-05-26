@@ -1,10 +1,10 @@
 # 🕌 Suleman AI - Islamic Chatbot Assistant
 
-An intelligent Islamic chatbot powered by AI, providing authentic answers from Quran and Hadith with semantic search capabilities.
+An intelligent Islamic chatbot powered by Suleman-AI, providing authentic answers from Quran and Hadith with semantic search capabilities.
 
 ## ✨ Features
 
-- 🤖 **AI-Powered Conversations** - Natural language understanding for Islamic questions
+- 🤖 **AI Conversations** - Natural language understanding for Islamic questions
 - 📖 **Quran Integration** - Complete Quran with multiple translations and Tafsir
 - 📜 **Hadith Reference** - Authentic Hadith collections (Bukhari, Muslim)
 - 🔍 **Semantic Search** - Vector-based search for finding relevant verses and hadith
